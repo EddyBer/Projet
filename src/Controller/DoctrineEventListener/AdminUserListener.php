@@ -6,7 +6,7 @@ use App\Entity\AdminUser;
 use Doctrine\ORM\Event\LifecycleEventArgs;
 use Symfony\Component\PasswordHasher\Hasher\UserPasswordHasherInterface;
 
-class AdminUserEventListener
+class AdminUserListener
 {
 
     public function __construct(private readonly UserPasswordHasherInterface $passwordHasher)
